@@ -1,7 +1,7 @@
 const contactDetails = {
-  // Add your real email here when you are ready to publish it.
-  email: "",
+  email: "ali.safdarhussain2005@gmail.com",
   githubUrl: "https://github.com/k240848-prog",
+  linkedInUrl: "https://www.linkedin.com/in/ali-safdar-a4b289355/",
 };
 
 export const metadata = {
@@ -33,7 +33,7 @@ export default function ContactPage() {
               href={`mailto:${contactDetails.email}`}
             >
               <p className="text-sm font-medium text-slate-500">Email</p>
-              <p className="mt-2 font-semibold text-slate-950">
+              <p className="mt-2 break-all font-semibold text-slate-950">
                 {contactDetails.email}
               </p>
             </a>
@@ -60,6 +60,16 @@ export default function ContactPage() {
             <p className="mt-2 font-semibold text-slate-950">
               github.com/k240848-prog
             </p>
+          </a>
+
+          <a
+            className="rounded-2xl border border-slate-200 p-5 hover:border-slate-950"
+            href={contactDetails.linkedInUrl}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <p className="text-sm font-medium text-slate-500">LinkedIn</p>
+            <p className="mt-2 font-semibold text-slate-950">Ali Safdar</p>
           </a>
         </div>
       </section>
