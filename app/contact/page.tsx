@@ -22,9 +22,72 @@ export default function ContactPage() {
           Get in touch.
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
-          This page intentionally uses simple contact links instead of a contact
-          form. There is no backend contact system in this portfolio.
+          Send me a message using the form below, or connect through one of my
+          contact links.
         </p>
+
+        <form
+          action="https://formspree.io/f/xbgjgyll"
+          className="mt-8 space-y-5"
+          method="POST"
+        >
+          <div>
+            <label
+              className="text-sm font-medium text-slate-700"
+              htmlFor="name"
+            >
+              Name
+            </label>
+            <input
+              autoComplete="name"
+              className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-950 outline-none focus:border-slate-950"
+              id="name"
+              name="name"
+              required
+              type="text"
+            />
+          </div>
+
+          <div>
+            <label
+              className="text-sm font-medium text-slate-700"
+              htmlFor="email"
+            >
+              Email
+            </label>
+            <input
+              autoComplete="email"
+              className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-950 outline-none focus:border-slate-950"
+              id="email"
+              name="email"
+              required
+              type="email"
+            />
+          </div>
+
+          <div>
+            <label
+              className="text-sm font-medium text-slate-700"
+              htmlFor="message"
+            >
+              Message
+            </label>
+            <textarea
+              className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-950 outline-none focus:border-slate-950"
+              id="message"
+              name="message"
+              required
+              rows={6}
+            />
+          </div>
+
+          <button
+            className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {hasEmail ? (
