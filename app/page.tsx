@@ -43,6 +43,14 @@ export default function Home() {
           >
             Contact Me
           </Link>
+          <a
+            className="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 hover:border-slate-950"
+            href="/Ali_Safdar_Resume.pdf"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View CV
+          </a>
         </div>
       </section>
 
